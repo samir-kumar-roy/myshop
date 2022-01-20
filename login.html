@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store</title>
+    <!----- Add Fontawesome cdn ---->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- css style sheet--->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!------Starting topBar and NavBar ------>
+    <!--------Starting topbar       -->
+    <div class="top-bar">
+        <div class="guest-offer">
+            <a href="#" class="guest-user">Welcome Guest</a>
+            <a href="#" class="top-offer-text"> Shopping cart total price bdt 100.00, total items 2</a>
+        </div>
+
+        <div class="top-nav">
+            <ul class="menu">
+                <li><a href="customer_registration.html">Resgister</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Go To Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---Ending topbar------>
+
+
+    <div class="container">
+        <!---Starting Navbar------>
+        <div class="nav-bar">
+            <div class="nav-logo item">
+                <a href="index.html" class="navbar-brand home"><img src="images/logo.jpg" alt=""></a>
+            </div>
+            <div class="nav-main item">
+                <ul class="menu">
+                    <li class="active_link"><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="customer_care.html">Customer Care</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item">
+                <form action="result.html">
+                    <div id="search-section" onmouseout="showSearchMycartIcons()">
+                        <input type="text" name="search-text" id="search-text" placeholder="Search Term"><a><i
+                                class="fa fa-search"></i></a>
+                    </div>
+                </form>
+                <a href="javascript:void(0)" onmouseup="opensearchbox()" id="search-icon"><i
+                        class="fa fa-search"></i></a>
+                <a href="cart.html" id="mycart"><i class="fa fa-cart-plus"></i>
+                    My Cart(2)</a>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!---Ending Navbar------>
+    <div class="account-sec"></div>
+    <!------Ending topBar and NavBar ------>
+    <div class="login registration">
+        <form action="">
+            <h5>Login Area</h5>
+            <div class="form-control">
+                <label for="email">Email</label><input type="email" name="email" value="" id="email">
+            </div>
+            <div class="form-control">
+                <label for="pass">Password</label><input type="password" name="pass" value="" id="pass">
+            </div>
+            <div class="form-control">
+                <input type="submit" name="submit" value="Login">
+            </div>
+            <p>First Time Here? <a href="customer_registration.html">Register.</a></p>
+        </form>
+    </div>
+    <!-----Footer Start---->
+    <div style="width: 100%;">
+        <footer>
+            <div class="pages">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </div>
+            <div class="top_categories">
+                <h4>Top Product Categories</h4>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Jacket</a></li>
+                    <li><a href="#">Coats</a></li>
+                </ul>
+            </div>
+            <div class="user_section">
+                <h4>User Area</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="customer_registration.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <h4>Our Address</h4>
+                    <li>ShopKart Internet PVT LTD BD</li>
+                    <li>23/4 XYZ IT Park</li>
+                    <li>Gulshan #1</li>
+                    <li>Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <p>To receive our daily news letter, subscribe to us.<span><input type="email"
+                            placeholder="Your Email"><button type="Submit" name="submit"
+                            id="news_letter_btn">Subscribe</button></span></p>
+            </div>
+            <div class="social">
+                <h4>Find Us On</h4>
+                <div class="links">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i href="#" class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i href="#" class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-----Footer End---->
+
+
+
+    <script src="js/working.js"></script>
+</body>
+
+</html>

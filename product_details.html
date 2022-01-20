@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <!----- Add Fontawesome cdn ---->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- css style sheet--->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!------Starting topBar and NavBar ------>
+    <!--------Starting topbar       -->
+    <div class="top-bar">
+        <div class="guest-offer">
+            <a href="#" class="guest-user">Welcome Guest</a>
+            <a href="#" class="top-offer-text"> Shopping cart total price bdt 100.00, total items 2</a>
+        </div>
+
+        <div class="top-nav">
+            <ul class="menu">
+                <li><a href="customer_registration.html">Resgister</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Go To Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---Ending topbar------>
+
+
+    <div class="container">
+        <!---Starting Navbar------>
+        <div class="nav-bar">
+            <div class="nav-logo item">
+                <a href="index.html" class="navbar-brand home"><img src="images/logo.jpg" alt=""></a>
+            </div>
+            <div class="nav-main item">
+                <ul class="menu">
+                    <li class="active_link"><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="customer_care.html">Customer Care</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item">
+                <form action="result.html">
+                    <div id="search-section" onmouseout="showSearchMycartIcons()">
+                        <input type="text" name="search-text" id="search-text" placeholder="Search Term"><a><i
+                                class="fa fa-search"></i></a>
+                    </div>
+                </form>
+                <a href="javascript:void(0)" onmouseup="opensearchbox()" id="search-icon"><i
+                        class="fa fa-search"></i></a>
+                <a href="cart.html" id="mycart"><i class="fa fa-cart-plus"></i>
+                    My Cart(2)</a>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!---Ending Navbar------>
+    <div class="account-sec"></div>
+
+    <div class="container">
+        <ul class="breadcrumb-links">
+            <li><a href="index.html">Home</a></li>
+            <li>Shop</li>
+            <li>details</li>
+        </ul>
+
+    </div>
+    <div class="container sidebar-and-products">
+        <div class="sidebar">
+            <div class="head">
+                <h4>Manufacturers</h4>
+            </div>
+            <div class="manufacturers">
+                <div class="manufacturer">
+
+                    <p> Zara</p>
+                </div>
+                <div class="manufacturer">
+
+                    <p> Zodiac</p>
+                </div>
+                <div class="manufacturer">
+
+                    <p> Lenovo</p>
+                </div>
+                <div class="manufacturer">
+                    <p> Walton</p>
+                </div>
+                <div class="manufacturer">
+                    <p> Louis Vuiton</p>
+                </div>
+
+
+            </div>
+
+            <!----Sidebar Categories---->
+            <div class="head cat-head">
+                <h4>Categories</h4>
+            </div>
+            <div class="categories">
+                <div class="category">
+
+                    <p> Men</p>
+                </div>
+                <div class="category">
+
+                    <p> Women</p>
+                </div>
+                <div class="category">
+
+                    <p> Kids</p>
+                </div>
+                <div class="category">
+                    <p> Others</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="text-products">
+            <div class="single-product-details">
+                <div class="grid-item">
+                    <div class="image-carousel" id="slideshow">
+                        <div class="slide active">
+                            <img src="images/carousel-image-1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/carousel-image-2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/carousel-image-3.jpg" alt="">
+                        </div>
+                        <div class="controls">
+                            <a id="prev">Prev</a>
+                            <a id="next">Next</a>
+                        </div>
+                        <div class="controls">
+                            <a class="prev">Prev</a>
+                            <a class="next">Next</a>
+                        </div>
+                        <div class="indicators">
+                            <!-----Added through JS-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <h3>Product Short Description</h3>
+                    <p>
+                        By <span>Samir Roy</span>
+                        <span>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <span>(0 Review)</span>
+                        <span>
+                            <a href="#">Write a review.</a>
+                        </span>
+                    </p>
+                    <hr>
+                    <form action="">
+                        <div class="form-control">
+                            <label for="color">Color</label><select name="color" id="color">
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="red">Red</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="quantity">Quantity</label><input type="number">
+                        </div>
+                        <div class="total-price" id="total_price">
+                            <h3>Total Price: $40.99</h3>
+                        </div>
+                        <div class="buttons">
+                            <button id="addtocart"></span><i class="fa fa-shopping-cart"></i><span>&nbsp;&nbsp;Add To
+                                    Cart</button>
+                            <button id="addtowishlist"></span><i class="fa fa-heart"></i><span>&nbsp;&nbsp;Add To Wish
+                                    List</button>
+                        </div>
+                    </form>
+                    <h3>All images of the Product</h3>
+                    <div class="all-images">
+
+                        <div class="all-image">
+                            <a href="product_details.html">
+                                <img src="images/carousel-image-1.jpg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="all-image">
+                            <a href="product_details.html">
+                                <img src="images/carousel-image-1.jpg" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="all-image">
+                            <a href="product_details.html">
+                                <img src="images/carousel-image-2.jpg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="all-image">
+                            <a href="product_details.html">
+                                <img src="images/carousel-image-3.jpg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="desc-box">
+                <div class="product-desc">
+                    <h3>Product Description</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore dolore in modi eveniet
+                        dignissimos optio facilis quaerat nobis officiis veniam esse molestias, ut molestiae
+                        exercitationem nemo tempora rerum numquam.
+                    </p>
+                </div>
+                <div class="product-detail">
+                    <ul>
+                        <h3>Product Detail</h3>
+                        <li>
+                            <span>Item model number :</span>P_AE2998_M2
+                        </li>
+                        <li>
+                            <span>Manufacturer :</span> Amazon Essentials
+                        </li>
+                        <li>
+                            <span>Item model number :</span> P_AE2998_M2
+                        </li>
+                        <li>
+                            <span>Customer Reviews:</span> 121 ratings
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="related-products">
+                <h3>Viwers also like these products</h3>
+                <div class="rel-products">
+                    <div class="rel-product">
+                        <a href="#"><img src="images/carousel-image-1.jpg" alt=""></a>
+                    </div>
+                    <div class="rel-product">
+                        <a href="#"><img src="images/carousel-image-2.jpg" alt=""></a>
+                    </div>
+                    <div class="rel-product">
+                        <a href="#"><img src="images/carousel-image-3.jpg" alt=""></a>
+                    </div>
+                    <div class="rel-product">
+                        <a href="#"><img src="images/images.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-----Footer Start---->
+    <div style="width: 100%;">
+        <footer>
+            <div class="pages">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </div>
+            <div class="top_categories">
+                <h4>Top Product Categories</h4>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Jacket</a></li>
+                    <li><a href="#">Coats</a></li>
+                </ul>
+            </div>
+            <div class="user_section">
+                <h4>User Area</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="customer_registration.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <h4>Our Address</h4>
+                    <li>ShopKart Internet PVT LTD BD</li>
+                    <li>23/4 XYZ IT Park</li>
+                    <li>Gulshan #1</li>
+                    <li>Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <p>To receive our daily news letter, subscribe to us.<span><input type="email"
+                            placeholder="Your Email"><button type="Submit" name="submit"
+                            id="news_letter_btn">Subscribe</button></span></p>
+            </div>
+            <div class="social">
+                <h4>Find Us On</h4>
+                <div class="links">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i href="#" class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i href="#" class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/working.js"></script>
+</body>
+
+</html>

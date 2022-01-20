@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <!----- Add Fontawesome cdn ---->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- css style sheet--->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!------Starting topBar and NavBar ------>
+    <!--------Starting topbar       -->
+    <div class="top-bar">
+        <div class="guest-offer">
+            <a href="#" class="guest-user">Welcome Guest</a>
+            <a href="#" class="top-offer-text"> Shopping cart total price bdt 100.00, total items 2</a>
+        </div>
+
+        <div class="top-nav">
+            <ul class="menu">
+                <li><a href="customer_registration.html">Resgister</a></li>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="cart.html">Go To Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!---Ending topbar------>
+
+
+    <div class="container">
+        <!---Starting Navbar------>
+        <div class="nav-bar">
+            <div class="nav-logo item">
+                <a href="index.html" class="navbar-brand home"><img src="images/logo.jpg" alt=""></a>
+            </div>
+            <div class="nav-main item">
+                <ul class="menu">
+                    <li class="active_link"><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="customer_care.html">Customer Care</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-right item">
+                <form action="result.html">
+                    <div id="search-section" onmouseout="showSearchMycartIcons()">
+                        <input type="text" name="search-text" id="search-text" placeholder="Search Term"><a><i
+                                class="fa fa-search"></i></a>
+                    </div>
+                </form>
+                <a href="javascript:void(0)" onmouseup="opensearchbox()" id="search-icon"><i
+                        class="fa fa-search"></i></a>
+                <a href="cart.html" id="mycart"><i class="fa fa-cart-plus"></i>
+                    My Cart(2)</a>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!---Ending Navbar------>
+    <div class="account-sec"></div>
+
+    <div class="container">
+        <ul class="breadcrumb-links">
+            <li><a href="index.html">Home</a></li>
+            <li>My Cart</li>
+        </ul>
+
+    </div>
+    <div class="container sidebar-and-products">
+        <div class="sidebar">
+            <div class="head">
+                <h4>Manufacturers</h4>
+            </div>
+            <div class="manufacturers">
+                <div class="manufacturer">
+
+                    <p> Zara</p>
+                </div>
+                <div class="manufacturer">
+
+                    <p> Zodiac</p>
+                </div>
+                <div class="manufacturer">
+
+                    <p> Lenovo</p>
+                </div>
+                <div class="manufacturer">
+                    <p> Walton</p>
+                </div>
+                <div class="manufacturer">
+                    <p> Louis Vuiton</p>
+                </div>
+
+
+            </div>
+
+            <!----Sidebar Categories---->
+            <div class="head cat-head">
+                <h4>Categories</h4>
+            </div>
+            <div class="categories">
+                <div class="category">
+
+                    <p> Men</p>
+                </div>
+                <div class="category">
+
+                    <p> Women</p>
+                </div>
+                <div class="category">
+
+                    <p> Kids</p>
+                </div>
+                <div class="category">
+                    <p> Others</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cart-sec">
+            <div>
+                <table>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Image</th>
+                        <th>Quantity</th>
+                        <th>Price(tk)</th>
+                        <th>Sub-Total(tk)</th>
+                    </tr>
+                    <tr>
+                        <td>Walton Laptop BX3</td>
+                        <td><img src="images/carousel-image-1.jpg" alt=""></td>
+                        <td><input type="number" value="1" name="pro-quantity"></td>
+                        <td>39000.00</td>
+                        <td>39000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Logitech Headphone</td>
+                        <td><img src="images/carousel-image-2.jpg" alt=""></td>
+                        <td><input type="number" value="2" name="pro-quantity"></td>
+                        <td>790.00</td>
+                        <td>1580.00</td>
+                    </tr>
+                </table>
+
+                <div class="cart-total">
+                    <p><span>Total:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bdt. 40500.00</span></p>
+                </div>
+                <div class="checkout-sec">
+                    <a href="shop.html">
+                        <i class="fas fa-arrow-left"></i> Continue Shopping
+                    </a>
+                    <a href="checkout.html">
+                        Checkout<i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-----Footer Start---->
+    <div style="width: 100%;">
+        <footer>
+            <div class="pages">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </div>
+            <div class="top_categories">
+                <h4>Top Product Categories</h4>
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Jacket</a></li>
+                    <li><a href="#">Coats</a></li>
+                </ul>
+            </div>
+            <div class="user_section">
+                <h4>User Area</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="customer_registration.html">Register</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                <ul>
+                    <h4>Our Address</h4>
+                    <li>ShopKart Internet PVT LTD BD</li>
+                    <li>23/4 XYZ IT Park</li>
+                    <li>Gulshan #1</li>
+                    <li>Dhaka, Bangladesh</li>
+                </ul>
+            </div>
+            <div class="news_letter">
+                <p>To receive our daily news letter, subscribe to us.<span><input type="email"
+                            placeholder="Your Email"><button type="Submit" name="submit"
+                            id="news_letter_btn">Subscribe</button></span></p>
+            </div>
+            <div class="social">
+                <h4>Find Us On</h4>
+                <div class="links">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i href="#" class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i href="#" class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/working.js"></script>
+</body>
+
+</html>
